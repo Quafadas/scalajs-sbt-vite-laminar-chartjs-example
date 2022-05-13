@@ -6,7 +6,7 @@ This is an example of putting together:
 * [sbt](https://www.scala-sbt.org/)
 * [Vite](https://vitejs.dev/)
 * [Laminar](https://laminar.dev/)
-* [Chart.js](https://www.chartjs.org/), statically typed with [ScalablyTyped](https://scalablytyped.org/)
+* dedav4s
 
 ## Install
 
