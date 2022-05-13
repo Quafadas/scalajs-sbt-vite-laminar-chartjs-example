@@ -19,7 +19,7 @@ object Main {
   ) derives ReadWriter
 
   object DataItem {
-    def apply(): DataItem = DataItem("?", Math.random())
+    def apply(): DataItem = DataItem(scala.util.Random.nextString(5), Math.random())
   }
 
   val dataVar = Var[List[DataItem]](List(DataItem("one", 1.0)))
