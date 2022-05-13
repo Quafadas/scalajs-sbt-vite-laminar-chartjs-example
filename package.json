@@ -8,7 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "chart.js": "2.9.4"
+    "vega-embed" : "6.20.8",
+    "vega-lite" : "5.2.0",
+    "vega" : "5.22.0"
   },
   "devDependencies": {
     "vite": "^2.9.9",

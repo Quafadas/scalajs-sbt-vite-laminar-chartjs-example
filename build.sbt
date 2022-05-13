@@ -5,8 +5,7 @@ val publicProd = taskKey[String]("output directory for `npm run build`")
 
 lazy val `test-vite` = project
   .in(file("."))
-  .enablePlugins(ScalaJSPlugin)
-  .enablePlugins(ScalablyTypedConverterExternalNpmPlugin)
+  .enablePlugins(ScalaJSPlugin)  
   .settings(
     scalaVersion := "3.1.2",
     scalacOptions ++= Seq("-encoding", "utf-8", "-deprecation", "-feature"),
@@ -24,6 +23,9 @@ lazy val `test-vite` = project
 
     libraryDependencies ++= Seq(
       "com.raquo" %%% "laminar" % "0.14.2",
+      "io.github.quafadas" %%% "dedav4s" % "0.8.0",
+      "org.scala-js" %%% "scalajs-dom" % "2.1.0",
+      "org.scala-js" %  "scalajs-java-securerandom_sjs1_2.13" % "1.0.0",
     ),
 
     publicDev := linkerOutputDirectory((Compile / fastLinkJS).value).getAbsolutePath(),
