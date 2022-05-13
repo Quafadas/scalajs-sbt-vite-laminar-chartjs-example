@@ -10,8 +10,6 @@ import upickle.default.ReadWriter
 import viz.vega.plots.BarChart
 import org.scalajs.dom.html.Div
 import java.util.UUID
-import javax.xml.crypto.Data
-
 object Main {
 
   case class DataItem(
